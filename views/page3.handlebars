@@ -1,11 +1,27 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chronometer</title>
 
+    <style>
+        body {
+            font-family: monospace;
+            font-size: 2em;
+            padding-top: 1em;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <h1 data-chronometer>00:00:00</h1>
+    <button id="play">play</button>
+    <button id="pause">pause</button>
+    <button id="reset">reset</button>
 
+<<<<<<< HEAD
 		<img align=right id=burgermenu src="menu.png" width="30">
 		<h1  align=center>_______________________________________________________________________________________</h1>
 		<br>
@@ -28,5 +44,43 @@
 
 		<h1  align=center>_______________________________________________________________________________________</h1>
 </div>
+=======
+    <script type="text/javascript">
+        let hours = `00`,
+            minutes = `00`,
+            seconds = `00`,
+            chronometerCall
+        function chronometer() {
+            seconds++
+            if (seconds < 10) seconds = `0`+seconds
+            if (seconds > 59) {
+                seconds = `00`
+                minutes ++
+                if (minutes < 10) minutes = `0`+minutes
+            }
+            if (minutes > 59) {
+                minutes = `00`
+                hours ++
+            }
+            document.querySelector(`[data-chronometer]`)
+                    .textContent = `${hours}:${minutes}:${seconds}`
+        }
+        play.onclick = (event) => {
+            chronometerCall = setInterval(chronometer, 1000)
+            event.target.setAttribute(`disabled`,``)
+        }
+        pause.onclick = () => {
+            clearInterval(chronometerCall)
+            play.removeAttribute(`disabled`)
+        }
+        reset.onclick = () => {
+            reset.onclick = () => {
+		hours = '00',
+		minutes = '00',
+		seconds = '00'
+        }
+        }
+    </script>
+>>>>>>> 5afaa8d5ebf9be38f065f54268d1f13e1123f7a7
 </body>
 </html>
