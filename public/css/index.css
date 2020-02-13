@@ -8,6 +8,10 @@ body{
 	position:relative;
 }
 
+h1,h2,h3,h4,label,a{
+            color: white;
+}
+
 #body,form,#Login,#start,#timer,#break{
     padding: 10px;
     margin: 25px;
@@ -70,7 +74,6 @@ select {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
   margin: 5px auto; /* 15% from the top and centered */
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
@@ -92,7 +95,7 @@ select {
 /* Close button on hover */
 .close:hover,
 .close:focus {
-  color: red;
+  color: black;
   cursor: pointer;
 }
 
