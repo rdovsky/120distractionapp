@@ -6,55 +6,30 @@
 
 </head>
 <body>
-<div id="container">
-	<div id="body">
-
-		<h1 align=center>Anti-Distraction App</h1>
-		<br>
-		<br>
-		<br>
-		<br>
-			<h1 id="question" align=center>Time to work?</h1>
-
-			<br>
-			<br>
-			<img id=brain src="brain.jpg" width="200">
-
-
-
-	</div>
-	<div id="footer" align=center style="bottom:40px">
-
-		<div id="id01" class="modal">
-		  <span onclick="document.getElementById('id01').style.display='none'"
-		class="close" title="Close Modal">&times;</span>
-
-		  <!-- Modal Content -->
-		  <form class="modal-content animate" action="/action_page.php">
-		    <div class="imgcontainer">
-
-		    </div>
-
-		    <div class="container" align=center>
-		      <label for="uname"><b>Username</b></label>
-		      <input type="text" placeholder="Enter Username" name="uname" required>
-
-		      <label for="psw"><b>Password</b></label>
-		      <input type="password" placeholder="Enter Password" name="psw" required>
-
-					<br>
-					<br>
-		      <label>
-		        <input type="checkbox" checked="checked" name="remember"> Remember me
-		      </label>
-		    </div>
-
-		    <div class="container" style="background-color:#f1f1f1">
-		    </div>
-		  </form>
-		<a id="Login" href=page2>Login</a>
-	</div>
-
-</div>
+    <div>
+	    <h1 align=center>Anti-Distraction App</h1><br>
+		<h1 align=center>Time to work?</h1><br><br>
+		<img id=brain src="brain.jpg" width=auto>
+    </div>
+    <div id="footer" align=center >
+        <div id="id01" class="modal">
+	        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+	        <!-- Modal Content -->
+	        <form class="modal-content animate" action="/action_page.php">
+		        <div class="imgcontainer"></div>
+		        <div align=center>
+		            <label for="uname"><b>Username</b></label>
+		            <input type="text" placeholder="Enter Username" name="uname" required>
+		            <label for="psw"><b>Password</b></label>
+		            <input type="password" placeholder="Enter Password" name="psw" required>
+					<br><br>
+		            <label>
+		                <input type="checkbox" checked="checked" name="remember"> Remember Me
+		            </label>
+		        </div>
+	        </form>
+	        <a id="Login" href=page2>Login</a>
+        </div>
+    </div>
 </body>
 </html>
