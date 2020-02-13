@@ -16,35 +16,24 @@
     </style>
 </head>
 <body>
-    <h1 data-chronometer>00:00:00</h1>
-    <button id="play">play</button>
-    <button id="pause">pause</button>
-    <button id="reset">reset</button>
 
-<<<<<<< HEAD
-		<img align=right id=burgermenu src="menu.png" width="30">
-		<h1  align=center>_______________________________________________________________________________________</h1>
-		<br>
-		<br>
+	<div align=center>
+	    <h3>Time Elapsed</h3>
+	    <h4>Hr Min Sec</h4>
+	
+	<!--timer placeholder-->
+	<h2 data-chronometer>00:00:00</h2>
+	<button id="play">Play</button>
+	<button id="pause">Pause</button>
+	<button id="reset">Reset</button>
+	<br><br>
+    </div>
+    
+    <div id="footer" align=center style="bottom:40px">
+		<a id="break" href=breaktime>Take a Break</a>
+	</div>
 
-    <h1  align=center>Time Elapsed</h1>
-		<h1  align=center>hr          min          sec</h1>
-		<br>
-		<br>
-
-
-		<h1  align=center>_______________________________________________________________________________________</h1>
-
-
-		<h1  align=center>Time Until Next Break</h1>
-		<h1  align=center>min           sec</h1>
-		<br>
-		<br>
-
-
-		<h1  align=center>_______________________________________________________________________________________</h1>
-</div>
-=======
+    <!--timer script-->
     <script type="text/javascript">
         let hours = `00`,
             minutes = `00`,
@@ -75,12 +64,11 @@
         }
         reset.onclick = () => {
             reset.onclick = () => {
-		hours = '00',
-		minutes = '00',
-		seconds = '00'
-        }
+		    hours = '00',
+		    minutes = '00',
+		    seconds = '00'
+            }
         }
     </script>
->>>>>>> 5afaa8d5ebf9be38f065f54268d1f13e1123f7a7
 </body>
 </html>
