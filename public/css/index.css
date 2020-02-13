@@ -75,13 +75,10 @@ select {
 
 /* The Close Button */
 .close {
-  /* Position it in the top right corner outside of the modal */
   position: absolute;
   right: 25px;
-
-  top: 0;
   color: #FFFFFF;
-  font-size: 35px;
+  font-size: 25px;
   font-weight: bold;
 }
 
