@@ -12,6 +12,7 @@ var index = require('./routes/index');
 var page2 = require('./routes/page2');
 var page3 = require('./routes/page3');
 var breaktime = require('./routes/breaktime');
+var finish = require('./routes/finish');
 // Example route
 // var user = require('./routes/user');
 
@@ -41,6 +42,8 @@ app.get('/', index.view);
 app.get('/page2', page2.view);
 app.get('/page3', page3.view);
 app.get('/breaktime', breaktime.view);
+app.get('/finish', finish.view);
+
 // Example route
 // app.get('/users', user.list);
 
