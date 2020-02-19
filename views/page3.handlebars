@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
     <title>Chronometer</title>
 
     <style>
@@ -21,7 +22,7 @@
 	<div id="timer" align=center>
 	    <h3>Time Elapsed</h3>
 	    <h4>Hr Min Sec</h4>
-	
+
     	<!--timer placeholder-->
         <h2 data-chronometer>00:00:00</h2>
         <button id="play">Play</button>
@@ -29,9 +30,10 @@
         <button id="reset">Reset</button>
         <br><br>
     </div>
-    
+
     <div id="footer" align=center >
-		<a id="break" href=breaktime>Take a Break</a>
+      <button id="takebreak">Take a Break</button>
+    <button id="break"> Finish </button>
 	</div>
 
     <!--timer script-->
@@ -70,7 +72,8 @@
 		    seconds = '00'
             }
         }
+
     </script>
-    
+<script src="js/page3.js"></script>
 </body>
 </html>

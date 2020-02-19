@@ -2,6 +2,8 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/index.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
+
 
 </head>
 <body>
@@ -13,16 +15,12 @@
         {{#each suggestions}}
         		{{suggestion}}
         {{/each}}
-    <br>
-<h1 align=center>Did you complete your goal for this work session?</h1>
-<div align=center> <input type="text" id="goal2" name="goal2">
 
-	<h1 align=center>How do you feel about the work you completed?</h1>
-	<div align=center> <input type="text" id="goal2" name="goal2">
-
-		<h1 align=center>Would you like to keep working?</h1>
-		<a id="yes" href=page2>Yes!</a>
-		<a id="no" href=finish>No</a>
+<h3 align=center>Did you complete your goal for this work session?</h3>
+		<button id="yes">Yes!</button>
+		<button id="no">No!</button>
 	</div>
+
+	<script src="js/breaktime.js"></script>
 </body>
 </html>

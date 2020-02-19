@@ -3,6 +3,7 @@
 	<title>Anti-Distraction App</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/index.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
 
 </head>
 <body>
@@ -17,16 +18,28 @@
 		<br>
 		<h3  align=center>What is your goal for this work session?</h3>
 		<div align=center> <input type="text" id="goal" name="goal">
-			<h3  align=center>What is your biggest distractor when you work on the computer?</h3>
-			<div align=center> <input type="text" id="distraction" name="distraction">
 		</div>
+
+
+		<form id="addSuggestionForm" role="form" method="get" action="/add">
+		<h3>Do you have a breaktime suggestion?</h3>
+	    <div class="form-group">
+	      <label for="suggestion">Suggestion:</label>
+	      <input type="text" class="form-control" id="suggestion" placeholder="suggestion" name="suggestion">
+	    </div>
+
+
         <br>
 
         </select><br><br>
 	</div><br>
 	<div id="footer" align=center >
-		<a id="start" href=page3>Ready</a>
+		<button id="ready"> Ready </button>
 	</div>
+
+<script src="js/page2.js"></script>
+<script src="js/jquery-1.11.0.js"></script>
+<script src="js/bootstrap.js"></script>
 
 </body>
 </html>

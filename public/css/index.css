@@ -12,7 +12,7 @@ h1,h2,h3,h4,label,a{
             color: white;
 }
 
-#body,form,#Login,#start,#timer,#break{
+#body,form,#Login,#start,#timer,#break,#yes,#takebreak,#ready,#no{
     padding: 10px;
     margin: 25px;
     opacity: .75;

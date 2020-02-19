@@ -1,9 +1,10 @@
-
+var data = require('../data.json');
 /*
  * GET page 2
  */
 
 exports.view = function(req, res){
   console.log("goal");
-  res.render('page2');
+  console.log(data);
+  res.render('page2', data);
 };

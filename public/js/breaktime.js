@@ -1,27 +1,32 @@
 'use strict';
 
-// Call this function when the page loads (the "ready" event)
+
 $(document).ready(function() {
 	initializePage();
 })
 
 
 function initializePage() {
-$("#break").click(projectClick);
-$("#takebreak").click(breakClick);
+$("#yes").click(yesClick);
+$("#no").click(noClick);
 
 }
 
-function breakClick(e) {
+function yesClick(e) {
 	// prevent the page from reloading
 	e.preventDefault();
-	window.location.href = '/breaktime?goal=' + getQueryVariable("goal");
+	window.location.href = '/finish?goal=' + getQueryVariable("goal");
 
 }
 
-/*
- * Function that is called when the document is ready.
- */
+function noClick(e) {
+	// prevent the page from reloading
+	e.preventDefault();
+	window.location.href = '/page2';
+
+}
+
+
 function getQueryVariable(variable) {
     var query = window.location.search.substring(1);
     var vars = query.split('&');
@@ -32,11 +37,4 @@ function getQueryVariable(variable) {
         }
     }
     console.log('Query variable %s not found', variable);
-}
-
-function projectClick(e) {
-	// prevent the page from reloading
-	e.preventDefault();
-	window.location.href = '/finish?goal=' + getQueryVariable("goal");
-
 }
