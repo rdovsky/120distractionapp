@@ -5,11 +5,12 @@ exports.addSuggestion = function(request, response) {
     var suggestion = request.query.suggestion;
 
     var newSuggestion = {
-        suggestion: suggestion,
+        suggestion: suggestion
     }
 
     data.suggestions.push(newSuggestion);
     response.redirect('/');
-    console.log()
-    //res.render('add', data);
+    console.log(suggestions);
+    //console.log(newSuggestion);
+    res.render('add', data);
 }

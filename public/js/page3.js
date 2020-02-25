@@ -9,6 +9,7 @@ $(document).ready(function() {
 function initializePage() {
 $("#break").click(projectClick);
 $("#takebreak").click(breakClick);
+$("#mygoal").append(getQueryVariable("goal"));
 
 }
 

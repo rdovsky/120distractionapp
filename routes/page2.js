@@ -5,6 +5,6 @@ var data = require('../data.json');
 
 exports.view = function(req, res){
   console.log("goal");
-  console.log(data);
+  //console.log(data);
   res.render('page2', data);
 };

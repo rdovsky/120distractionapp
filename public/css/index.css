@@ -104,3 +104,9 @@ select {
   from {transform: scale(0)}
   to {transform: scale(1)}
 }
+
+
+
+#goal {
+  width: 250px;
+  }

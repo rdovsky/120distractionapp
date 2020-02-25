@@ -9,12 +9,14 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-$("#ready").click(projectClick);
+$("#ready").click(submitNewActivity);
 
 }
 
-function projectClick(e) {
-	// prevent the page from reloading
+/*
+ * Pass the new goal and suggestion data to page3
+ */
+function submitNewActivity(e) {
 	e.preventDefault();
 	window.location.href = '/page3?goal=' + $("#goal").val() + "&suggestion=" + $("#suggestion").val();
 
