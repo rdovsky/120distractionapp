@@ -1,5 +1,7 @@
 'use strict';
 
+const encs = ["Keep going!", "You're doing great", "Wow you're sooooo talented"];
+
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
