@@ -9,6 +9,7 @@ $(document).ready(function() {
 function initializePage() {
 $("#yes").click(yesClick);
 $("#no").click(noClick);
+ga("send", "event", 'yes', 'click');
 
 }
 
