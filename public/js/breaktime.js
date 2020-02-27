@@ -9,13 +9,14 @@ $(document).ready(function() {
 function initializePage() {
 $("#yes").click(yesClick);
 $("#no").click(noClick);
-ga("send", "event", 'yes', 'click');
 
 }
 
 function yesClick(e) {
 	// prevent the page from reloading
 	e.preventDefault();
+	ga('create', 'UA-158591101-2', 'auto');
+	ga("send", "event", 'yes', 'click');
 	window.location.href = '/finish?goal=' + getQueryVariable("goal");
 
 }

@@ -45,6 +45,7 @@ app.get('/page3', page3.view);
 app.get('/breaktime', breaktime.view);
 app.get('/finish', finish.view);
 app.get('/add', add.addSuggestion);
+app.get('/viewAlt', page3.viewAlt)
 
 // Example route
 // app.get('/users', user.list);
