@@ -8,15 +8,6 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <title>Chronometer</title>
 
-    <style>
-        body {
-            font-family: monospace;
-            font-size: 2em;
-            padding-top: 1em;
-            text-align: center;
-        }
-    </style>
-
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -34,29 +25,30 @@
 <body>
 
 	<div id="timer" align=center>
-	    <h3>Time Elapsed</h3>
-	    <h4>Hr Min Sec</h4>
+	    <h1>time elapsed:</h1>
+	    <h2><br>hr min sec</h2>
 
     	<!--timer placeholder-->
         <h2 data-chronometer>00:00:00</h2>
-        <button id="play">Play</button>
-        <button id="pause">Pause</button>
-        <button id="reset">Reset</button>
+        <button id="play">play</button>
+        <button id="pause">pause</button>
+        <button id="reset">reset</button>
         <br><br>
 
         {{#if viewAlt}}
-          <h3 align=center id="mygoal">My goal: </h3>
-          <h4 align=center >Keep going! You can do this! </h4>
+          <h1 align=center id="mygoal"><br>my goal: </h1>
+          <h3 align=center>keep going, you can do this! </h3>
 					{{else}}
-          <h3 align=center id="goodgood">   </h3>
+          <h2 align=center id="goodgood">   </h2>
 					{{/if}}
 
-    </div>
+    </div><br>
 
     <div id="footer" align=center >
-      <button id="takebreak">Take a Break</button>
-    <button id="break"> Finish </button>
+      <button id="takebreak">take a break</button>
+    <button id="break"> finish </button>
 	</div>
+	
 <script src="js/page3.js"></script>
     <!--timer script-->
     <script type="text/javascript">
@@ -94,7 +86,6 @@
 		    seconds = '00'
             }
         }
-
     </script>
 
 </body>
