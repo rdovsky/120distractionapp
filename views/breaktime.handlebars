@@ -1,36 +1,38 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="index.css">
 	<script src="https://code.jquery.com/jquery.js"></script>
+	<title>TimeCrunch</title>
 
 	<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
 	ga('create', 'UA-158591101-2', 'auto');
 	ga('send', 'pageview');
 	ga('require', 'GTM-K8W5WF3');
 	</script>
 	<!-- End Google Analytics -->
 
-	
 </head>
 <body>
-    <br><br><br>
-    <h2  align=center>Breaktime</h2>
     <div id="body">
-        <h3  align=center><u>Activity Suggestion</u></h3>
+        <h1  align=center>break time!</h1><br>
+        <div align=center>
+		<img class=img-responsive id="breakcup" src="breakcup.png"><br><br>
+    </div><br>
+        <h2  align=center>activity suggestion:</h2>
         <h3  align=center>take a walk</h3>
         {{#each suggestions}}
         		{{suggestion}}
         {{/each}}
-
-<h3 align=center>Did you complete your goal for this work session?</h3>
-		<button id="yes">Yes!</button>
-		<button id="no">No! Start a new session.</button>
+        <h2 align=center><br>did you complete your goal for this work session?</h2><br>
+        <div id="footer" align=center >
+	    	<button id="yes">yes</button>
+		    <button id="no">no,start a new session</button>
+		</div>
 	</div>
 
 	<script src="js/breaktime.js"></script>
