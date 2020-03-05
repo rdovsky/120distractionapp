@@ -1,9 +1,10 @@
 body{
-    background: linear-gradient(154.73deg, #FED7D7 32.12%, rgba(236, 119, 119, 0.77) 99.14%);
     font-family: courier, Monospace;
 }
 
 html{
+        background: linear-gradient(154.73deg, #FED7D7 32.12%, rgba(236, 119, 119, 0.77) 99.14%);
+
     height:100%;
 }
 
