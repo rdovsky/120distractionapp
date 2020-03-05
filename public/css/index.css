@@ -3,8 +3,8 @@ body{
 }
 
 html{
-        background: linear-gradient(154.73deg, #FED7D7 32.12%, rgba(236, 119, 119, 0.77) 99.14%);
-
+    background: linear-gradient(154.73deg, #FED7D7 32.12%, rgba(236, 119, 119, 0.77) 99.14%);
+    background-size:cover;
     height:100%;
 }
 
