@@ -1,37 +1,75 @@
 body{
-    font-family: monospace;
-    font-size: 2em;
-    padding-top: 1em;
-    text-align: center;
+    background: linear-gradient(154.73deg, #FED7D7 32.12%, rgba(236, 119, 119, 0.77) 99.14%);
+    font-family: courier, Monospace;
+}
+
+html,body{
+    height:100%;
+}
+
+#body, #timer{
+    padding-top: 10%;
+}
+
+select{
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+label{
+    color: white;
+    font-size: 18px;
+}
+
+#logo{
+    max-width: 300px;
+    height: auto;
+    margin: auto;
+}
+
+#breakcup {
+    max-width: 100px;
+    height: auto;
+    margin: auto;
+}
+
+#finishstars{
+    max-width: 200px;
+    height: auto;
+    margin: auto;
+}
+
+button,#login{
     background: #FED7D7;
-    min-height:100%;
-	position:relative;
-}
-
-h1,h2,h3,h4,label,a{
-            color: white;
-}
-
-#body,form,#Login,#start,#timer,#break,#yes,#takebreak,#ready,#no{
-    padding: 10px;
-    margin: 25px;
-    opacity: .75;
-    background: #FE7474;
-    border: 5px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     box-sizing: border-box;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    padding: 10px;
 }
 
-#footer {
-
-	width:100%;
+a,#ready, #play,#pause, #reset, #takebreak, #break, #yes, #no{
+    color:#FE7474;
+    text-decoration: none;
+    font-family: Courier,Monospace;
 }
 
-#brain {
-width: 250px;
-height: auto;
+h1{
+    color: #FE7474;
+    font-weight: normal;
 }
+
+h2{
+    color: white;
+    font-weight: normal;
+}
+
+h4,h3{
+    color: white;
+    font-style: italic;
+    font-weight: normal;
+}
+
 
 .dropdownmenu {
 margin:auto;
@@ -104,8 +142,6 @@ select {
   from {transform: scale(0)}
   to {transform: scale(1)}
 }
-
-
 
 #goal {
   width: 250px;
