@@ -6,34 +6,28 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 </head>
 <body>
-	<div id="body">
-		<h3  align=center>How long will you work for?</h3>
+	<div align=center id="body">
+		<h2 align=center>how long will you work for?</h2>
 		<select class="dropdownmenu">
           <option value="1">20 minutes</option>
           <option value="2">30 minutes</option>
           <option value="3">40 minutes</option>
           <option value="4">50 minutes</option>
         </select>
-		<br>
-		<h3  align=center>What is your goal for this work session?</h3>
+		<br><br>
+		<h2 align=center>what is your goal for this work session?</h2>
 		<div align=center> <input type="text" id="goal" name="goal">
-		</div>
-
-
+		</div><br>
 		<form id="addSuggestionForm" role="form" method="get" action="/add">
-		<h3>What do you usually like to do when you take a study break??</h3>
-	    <div class="form-group">
-	      <label for="suggestion">Activity:</label>
-	      <input type="text" class="form-control" id="suggestion" placeholder="read, journal, draw, etc." name="suggestion">
+		<h2 align=center>what do you usually like to do during a study break??</h2>
+	    <div class="form-group" align=center>
+	      <label for="suggestion">activity:</label><br><br>
+	      <input type="text" class="form-control" id="suggestion" placeholder=" read, journal, draw, etc." name="suggestion">
 	    </div>
-
-
-        <br>
-
-        </select><br><br>
+        <br><br><br>
 	</div><br>
 	<div id="footer" align=center >
-		<button id="ready"> Ready </button>
+		<button id="ready"> ready </button>
 	</div>
 
 <script src="js/page2.js"></script>
