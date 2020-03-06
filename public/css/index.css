@@ -49,13 +49,14 @@ button,#login{
     box-sizing: border-box;
     border-radius: 10px;
     padding: 10px;
-    font-size: medium;
 }
 
 a,#ready, #play,#pause, #reset, #takebreak, #break, #yes, #no, #startover{
     color:#FE7474;
     text-decoration: none;
     font-family: Courier,Monospace;
+    font-size: medium;
+
 }
 
 h1{
