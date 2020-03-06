@@ -24,4 +24,11 @@ function getQueryVariable(variable) {
  */
 function initializePage() {
 	$("#congrats").append(getQueryVariable("goal"));
+$("#startover").click(startoverClick);
+}
+
+function startoverClick(e) {
+	// prevent the page from reloading
+	e.preventDefault();
+	window.location.href = '/page2';
 }
