@@ -21,7 +21,8 @@ select{
 
 label{
     color: white;
-    font-size: 18px;
+    font-size: 24px;
+    font-weight:bold;
 }
 
 #logo{
