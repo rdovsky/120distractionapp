@@ -50,7 +50,7 @@ button,#login{
     padding: 10px;
 }
 
-a,#ready, #play,#pause, #reset, #takebreak, #break, #yes, #no{
+a,#ready, #play,#pause, #reset, #takebreak, #break, #yes, #no, #startover{
     color:#FE7474;
     text-decoration: none;
     font-family: Courier,Monospace;
@@ -58,18 +58,18 @@ a,#ready, #play,#pause, #reset, #takebreak, #break, #yes, #no{
 
 h1{
     color: #FE7474;
-    font-weight: normal;
+    font-weight: 550;
 }
 
 h2{
     color: white;
-    font-weight: normal;
+    font-weight: 550;
 }
 
 h4,h3{
     color: white;
     font-style: italic;
-    font-weight: normal;
+    font-weight: 550;
 }
 
 
