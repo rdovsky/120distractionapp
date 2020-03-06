@@ -56,7 +56,7 @@ a,#ready, #play,#pause, #reset, #takebreak, #break, #yes, #no, #startover{
     text-decoration: none;
     font-family: Courier,Monospace;
     font-size: medium;
-    font-weight: bold;
+    font-weight: normal;
 
 }
 
